@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212529;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.171),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./img/bg.png") fixed center center;
+  background-size: cover;
+  object-fit: cover;
+  background-color: white;
+}
+
+.navbar {
+  background-color: transparent;
+  position: relative;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  width: 200px;
+  max-height: 50px;
+  margin-right: 690px;
+  vertical-align: auto;
+}
+
+#icon i {
+  font-size: 36px;
+  color: #000;
+  background: transparent;
+  margin-left: 30px;
+}
+
+.bac {
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-attachment: scroll; */
+  /* background-size: cover; */
+  min-height: 212px;
+}
+
+.footer {
+  height: 150px;
+  margin-top: 200px;
+}
+
+.footer .footer-content {
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
+  font-size: medium;
+}
+
+.footer .footer-content .contact-form {
+  padding-bottom: 90px;
+}
+
+input[type="search"] {
+  max-width: 500px;
+  max-height: 40px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 1px 0px #000;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: rgb(11, 71, 11);
+  border: none;
+  padding: 1.5%;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.row {
+  max-width: 100%;
+}
+.card {
+  background: transparent;
+  border: none;
+}
+.card .btn {
+  float: right;
+  background-color: rgb(36, 107, 36);
+}
+.card-body {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 700px;
+  max-width: 700px;
+  min-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 20px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-title2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.logout {
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    margin-bottom: 8%;
+  }
+  .navbar-nav {
+    background-color: #fff;
+    padding-left: 5%;
+    border-radius: 10px;
+  }
+  .nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #icon i {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+
+  .logout {
+    margin-left: 0%;
+  }
+
+  input[type="search"] {
+    max-width: 200px;
+    max-height: 30px;
+    font-size: 9px;
+  }
+
+  input[type="submit"] {
+    padding: 1%;
+    margin: 0%;
+    font-size: 13px;
+  }
+
+  .card-body {
+    min-width: 340px;
+    max-width: 340px;
+    min-height: 100px;
+    margin-left: 4%;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .card-title2 {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .card .btn {
+    font-size: 12px;
+  }
+}
+
+element.style {
+  width: 404rem;
+}
+
+/**Profile Css**/
+.mainprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  font-family: sans-serif;
+  text-align: left;
+  min-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+.profile h6 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.profile h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile_detail .desc {
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.profile_image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
+  float: left;
+  margin: 5%;
+}
+.profile_name {
+  font-size: 45px;
+  font-weight: bold;
+}
+.profile_title,
+.profile_detail {
+  margin-bottom: 20px;
+  padding-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    min-width: 200px;
+  }
+  .profile h6 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+
+  .profile h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .profile_detail .desc {
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  .profile_image {
+    width: 100px;
+    height: 100px;
+    margin: 5%;
+  }
+  .profile_name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .profile_title,
+  .profile_detail {
+    margin-bottom: 20px;
+    padding-left: 5%;
+  }
+}
+
+.Job-desc {
+  background: transparent;
+  max-width: 100%;
+}
+
+.desc-body {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 700px;
+  max-width: 700px;
+  min-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+
+.desc-body h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.desc-body h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.desc-body h4 {
+  font-size: 23px;
+  font-weight: normal;
+}
+.desc-body h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.desc-body p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .desc-body {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    margin-left: 10%;
+  }
+  .desc-body h2 {
+    font-size: 20px;
+  }
+  .desc-body h3 {
+    font-size: 16px;
+  }
+  .desc-body h4 {
+    font-size: 14px;
+  }
+  .desc-body h5 {
+    font-size: 13px;
+  }
+  .desc-body p {
+    font-size: 12px;
+  }
+}
